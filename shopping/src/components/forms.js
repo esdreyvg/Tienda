@@ -9,7 +9,7 @@ function checkButton() {
     )
 }
 
-function inputForm({typeInput, text, idInput}) {
+function inputForms({typeInput, text, idInput}) {
     return(
         <div>
             <input type={typeInput} value={text} name={idInput} />
@@ -17,7 +17,7 @@ function inputForm({typeInput, text, idInput}) {
     )
 }
 
-function forms({actionForm, formMethod}) {
+function Forms({actionForm, formMethod}) {
   return (
     <div>
         <form action={actionForm} method={formMethod}>
@@ -28,7 +28,7 @@ function forms({actionForm, formMethod}) {
 }
 
 export {
-    forms,
+    Forms,
     checkButton,
-    inputForm
+    inputForms
 }
